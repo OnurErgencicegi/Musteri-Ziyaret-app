@@ -1,0 +1,33 @@
+name: musteri_ziyaret_app
+description: Ziyaret Yönetimi - Tarımsal Saha Takip Uygulaması
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Harita
+  flutter_map: ^7.0.2        # harita_onizleme.dart, musteri_ekle_screen.dart
+  latlong2: ^0.9.1           # LatLng tipi (flutter_map ile birlikte gelir ama explicit ekle)
+
+  # Konum / GPS  –  API key gerektirmez
+  geolocator: ^13.0.1        # konum_servisi.dart, musteri_ekle_screen.dart
+
+  # Harici uygulama açma (Google Maps URL)
+  url_launcher: ^6.3.1       # harita_onizleme.dart
+
+  # State management
+  provider: ^6.1.2           # musteri_provider.dart
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
